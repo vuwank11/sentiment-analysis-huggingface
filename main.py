@@ -39,6 +39,7 @@ def analyze_text(request: TextRequest):
 #    label = response[0]["label"]
 #    score = response[0]["score"]
 #    return f"The '{prompt}' input is {label} with a score of {score}"
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
